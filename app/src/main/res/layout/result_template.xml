@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/course"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:text="15CS401-PROFESSIONAL ETHICS AND SOFTWARE ECONOMICS"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-condensed-medium"/>
+            <TextView
+                android:id="@+id/semCred"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:text="Semester-7 | Credit-4"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-light"/>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="1dp"
+                android:background="@color/wet"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/marks"
+                    android:padding="2dp"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:autoSizeTextType="uniform"
+                    android:text="81/100"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed-medium"/>
+                <TextView
+                    android:textSize="15dp"
+                    android:autoSizeTextType="uniform"
+                    android:id="@+id/grade"
+                    android:padding="2dp"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-condensed-medium"/>
+                <TextView
+                    android:textSize="15dp"
+                    android:autoSizeTextType="uniform"
+                    android:id="@+id/result"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="PASS"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/wet"
+                    android:fontFamily="sans-serif-condensed-medium"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
